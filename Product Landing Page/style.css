@@ -1,0 +1,163 @@
+* {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+}
+
+
+/* Header Style */
+
+#header-img {
+    width: 25rem;
+    padding: 10px;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+#header {
+    display: flex;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    justify-content: space-between;
+    background-color: rgb(214, 211, 211);
+    padding-top: 10px;
+}
+
+#nav-bar {
+    align-self: flex-end;
+    margin-right: 30px;
+    padding-bottom: 10px;
+}
+
+.nav-link {
+    margin-left: 20px;
+}
+
+@media (max-width: 740px) {
+    #header {
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+}
+
+
+/* Header style end */
+
+
+/* MAIN CONTENT STYLE */
+
+#title {
+    text-align: center;
+    margin-bottom: 50px;
+    margin-top: 120px;
+}
+
+.icons {
+    width: 3.5rem;
+    margin-left: 20%;
+    margin-right: 2rem;
+}
+
+.text {
+    margin-right: 20%;
+}
+
+.container {
+    display: flex;
+    margin-bottom: 50px;
+}
+
+@media (max-width: 900px) {
+    .icons {
+        margin-left: 5%;
+    }
+    .text {
+        margin-right: 5%;
+    }
+}
+
+
+/* VIDEO STYLE*/
+
+#video-div {
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+@media (max-width: 500px) {
+    iframe {
+        width: 100%;
+    }
+}
+
+
+/* VIDEO STYLE END */
+
+
+/*EMAIL STYLE*/
+
+#form {
+    text-align: center;
+}
+
+#email {
+    margin-bottom: 10px;
+    ;
+}
+
+#submit {
+    background-color: rgb(226, 226, 61);
+    border: none;
+    width: 150px;
+    font-weight: bold;
+    margin-bottom: 50px;
+}
+
+
+/*EMAIL STYLE END */
+
+
+/* PRICES */
+
+#pricing {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.container2 {
+    border: 1px solid;
+    /* display: inline-block; */
+    text-align: center;
+    padding: 20px;
+    width: 250px;
+    margin-bottom: 50px;
+    margin-left: 10px;
+}
+
+@media (max-width: 925px) {
+    #pricing {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+
+/*PRICES END */
+
+footer {
+    display: flex;
+    justify-content: flex-end;
+    background-color: rgb(214, 211, 211);
+    padding: 10px;
+}
+
+@media (max-width: 600px) {
+    footer {
+        justify-content: center;
+    }
+}

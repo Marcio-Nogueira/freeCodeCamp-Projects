@@ -1,0 +1,143 @@
+        /*General style*/
+        
+        * {
+            margin: 0;
+            padding: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        
+        a {
+            text-decoration: none;
+            color: white;
+        }
+        /*End general style*/
+        /*Nav-bar style */
+        
+        #navbar {
+            position: fixed;
+            background-color: #C82D4C;
+            width: 100%;
+            padding: 20px;
+            top: 0;
+        }
+        
+        .nav-link {
+            float: right;
+            margin-right: 50px;
+        }
+        /*End nav-bar style*/
+        /*Welcome section style*/
+        
+        #welcome-section {
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            height: 100vh;
+            align-items: center;
+            justify-content: center;
+            font-size: 2rem;
+            background-color: #000E29;
+            background-size: cover;
+            color: white;
+        }
+        /*End welcome section style*/
+        /*Projects section*/
+        
+        #projects {
+            background-color: #0C080B;
+            color: white;
+            text-align: center;
+            padding-bottom: 10px;
+            display: grid;
+            grid-gap: 10px;
+            grid-template-areas: "a1 a1 a1 a1" "a2 a2 a3 a3" "a4 a4 a5 a5"
+        }
+        
+        .item1 {
+            grid-area: a1;
+            margin-bottom: 50px;
+            margin-top: 50px;
+            text-decoration: underline;
+        }
+        
+        .item2 {
+            grid-area: a2;
+            margin-bottom: 20px;
+        }
+        
+        .item3 {
+            grid-area: a3;
+        }
+        
+        .item4 {
+            grid-area: a4;
+        }
+        
+        .item5 {
+            grid-area: a5;
+            margin-bottom: 50px;
+        }
+        
+        .label {
+            background-color: #31212D;
+            padding: 5px;
+            width: 79%;
+            margin: 0 auto;
+            margin-top: -5px;
+        }
+        
+        .picture {
+            width: 80%;
+            height: 300px;
+        }
+        
+        @media (max-width: 767px) {
+            #projects {
+                grid-template-areas: "a1" "a2" "a3" "a4" "a5"
+            }
+        }
+        /*End projects section*/
+        /*Contacts section*/
+        
+        #contact {
+            background-color: #000E29;
+            color: white;
+            display: flex;
+            flex-direction: column;
+            height: 80vh;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        #copy {
+            text-align: center;
+        }
+        
+        #copy>h1 {
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+        }
+        
+        #copy>p {
+            margin-bottom: 20px;
+        }
+        
+        #icon-links {
+            text-align: center;
+        }
+        
+        .links {
+            margin-right: 20px;
+            margin-left: 20px;
+        }
+        
+        #footer {
+            background-color: #000E29;
+            color: white;
+            border-top: 2px solid red;
+            padding-top: 50px;
+            padding-bottom: 50px;
+            display: flex;
+            justify-content: space-evenly;
+        }
+        /*End contacts section*/

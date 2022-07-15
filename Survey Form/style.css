@@ -1,0 +1,107 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+
+/* mobile friendly alternative to using background-attachment: fixed */
+
+body::before {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    background: var(--color-darkblue);
+    background-image: linear-gradient( 115deg, rgba(58, 58, 158, 0.8), rgba(136, 136, 206, 0.7)), url(https://cdn.freecodecamp.org/testable-projects-fcc/images/survey-form-background.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#title,
+#description {
+    text-align: center;
+}
+
+h1,
+p,
+label,
+legend {
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin-bottom: 1rem;
+}
+
+#survey-form {
+    background: rgba(26, 8, 70, 0.5);
+    border-radius: 0.25rem;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+@media (min-width: 480px) {
+    form {
+        padding: 2.5rem;
+    }
+}
+
+.form-group {
+    margin-top: 1rem;
+    padding: 0.25rem;
+}
+
+.form-group2 {
+    margin-top: 1rem;
+}
+
+
+/* Input aspect */
+
+input {
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+}
+
+legend {
+    margin-bottom: 0.5rem;
+}
+
+.form-group>input {
+    width: 100%;
+    border-radius: 0.25rem;
+    border: none;
+    height: 2rem;
+    text-indent: 5px;
+    margin-bottom: 1.5rem;
+}
+
+
+/* textarea aspect */
+
+textarea {
+    width: 100%;
+    height: 6rem;
+    border-radius: 0.25rem;
+    border: none;
+}
+
+
+/* button aspect */
+
+button {
+    width: 100%;
+    height: 2rem;
+    border-radius: 0.25rem;
+    border: none;
+    background-color: rgb(84, 165, 84);
+    color: white;
+}
